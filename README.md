@@ -13,7 +13,7 @@ Las visualizaciones fueron hechas en Tableau mediante el uso de una licencia aca
 
 ### Instrucciones de instalación 💾
 
-* Instalar Ionic Framework, puede descargarlo [aquí](https://ionicframework.com/docs/intro/cli).
+* Instalar Ionic Framework, puede conocer el procedimiento [aquí](https://ionicframework.com/docs/intro/cli).
 * Ejecutar el comando siguiente desde la carpeta raíz
 ```
 ionic serve
