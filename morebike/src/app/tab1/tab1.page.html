@@ -1,15 +1,26 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
       Origin Neighborhoods
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Origin Neighborhoods</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <tableau-viz id="tableauViz"     
+          [src]="visualizations[0].tableauURL">
+        </tableau-viz> 
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <tableau-viz id="tableauViz2"     
+          [src]="visualizations[1].tableauURL">
+        </tableau-viz> 
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

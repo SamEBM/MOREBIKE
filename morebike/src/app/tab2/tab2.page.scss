@@ -1,0 +1,41 @@
+.background {
+    height: 100%;
+    background: url('../../assets/images/background.jpeg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.row-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.title {
+    color: white;
+    font-size: 5rem;
+}
+
+.about {
+    padding: 100px 50px;
+}
+
+.ecobici_logo {
+    height: 200px;
+}
+
+.card-image {
+    max-height: 200px !important;
+}
