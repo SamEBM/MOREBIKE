@@ -9,8 +9,92 @@
 <ion-content>
   <ion-grid>
     <ion-row>
-      <ion-col>
-      
+      <ion-col class="ion-text-center">
+        <div *ngIf="showVisualizations[0]" class="description">
+          <h2 class="subtitle">
+            Pareto Charts
+          </h2>
+          <ion-item lines="none">
+            <ion-label class="ion-text-wrap ion-text-center">
+              <p class="p-text">
+                These graphs have the objective of analyzing if the Pareto principle (also known as the 80/20 rule) 
+                is fulfilled in the monthly trips per neighborhood as the destination of trips in different years.
+              </p>
+              <br>
+              <p class="p-text">
+                It can be seen which are the neighborhoods that contribute the highest proportion of trips 
+                on weekdays and on weekends, which make up 80% of the total trips per month.
+              </p>
+            </ion-label>
+          </ion-item>
+        </div>
+        <div #vizContainer1 class="dashboard"></div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <div *ngIf="showVisualizations[1]" class="description">
+          <h2 class="subtitle">
+            Boxplots
+          </h2>
+          <ion-item lines="none">
+            <ion-label class="ion-text-wrap ion-text-center">
+              <p class="p-text">
+                These graphs show the distribution of trips in the different neighborhoods of the system on 
+                weekdays and weekends, as well as those neighborhoods that are classified as atypical for having 
+                a considerably higher proportion of trips and that are shown in the points above the upper whisker of each box and schedule.
+              </p>
+            </ion-label>
+          </ion-item>
+        </div>
+        <div #vizContainer2 class="dashboard"></div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <div *ngIf="showVisualizations[2]" class="description">
+          <h2 class="subtitle">
+            Mobility between Neighborhoods
+          </h2>
+          <ion-item lines="none">
+            <ion-label class="ion-text-wrap ion-text-center">
+              <p class="p-text">
+                In these bar charts we can identify which neighborhoods people come from, ending their trips in the neighborhoods with the highest 
+                number of trips at different times, either on weekdays or on weekends.
+              </p><br>
+              <p class="p-text">
+                It is possible to identify some patterns, such as: <span>Local Mobility</span>, <span>Unidirectional Mobility</span> and 
+                <span>Bidirectional Mobility</span> between neighborhoods with most registered trips.
+              </p>
+            </ion-label>
+          </ion-item>
+        </div>
+        <div #vizContainer3 class="dashboard"></div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <div *ngIf="showVisualizations[3]" class="description">
+          <h2 class="subtitle">
+            Regular Mobility
+          </h2>
+          <ion-item lines="none">
+            <ion-label class="ion-text-wrap ion-text-center">
+              <p class="p-text">
+                In this line graph, it is possible to analyze the number of trips registered at different hours of the day, 
+                thus knowing the times at which trips usually end in each neighborhood and on the different days of the week.
+              </p><br>
+              <p class="p-text">
+                Thanks to this graph, we can perform an analysis on the demand for bike stations, and identify the places where more 
+                dock spaces are required at a certain time of day.
+              </p><br>
+              <p class="p-text ion-text-right">
+                The ECOBICI service is active from <span>5:00 am to 12:30 am</span> every day.
+              </p>
+            </ion-label>
+          </ion-item>
+        </div>
+        <div #vizContainer4 class="dashboard"></div>
       </ion-col>
     </ion-row>
   </ion-grid>
