@@ -32,3 +32,10 @@
     display: flex;
     justify-content: center;
 }
+
+.regular-mob {
+    iframe {
+        height: 800px !important;
+        max-width: 1200px;
+    }
+}
