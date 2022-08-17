@@ -25,10 +25,8 @@ export class Tab3Page {
     device: 'desktop',
     hideTabs: true,
     onFirstInteractive: () => {
-      console.log("onFirstInteractive");
     },
     onFirstVizSizeKnown: () => {
-      console.log("onFirstVizSizeKnown");
       this.showVisualizations[this.counter] = true;
       this.counter++;
     }
@@ -44,7 +42,6 @@ export class Tab3Page {
 
   ngAfterViewInit() {
     this.divContainers = this.elem.nativeElement.querySelectorAll('.dashboard');
-    console.log(this.divContainers)
     this.initTableau();
   }
 

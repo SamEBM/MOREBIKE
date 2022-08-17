@@ -48,9 +48,13 @@
             <ion-card-title class="subtitle">Data Source</ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            <p class="p-text">ECOBICI has been in operation since 2010 and publishes its open data monthly in its <a href="https://ecobici.cdmx.gob.mx/datos-abiertos/">official page</a>.</p>
-            <p class="p-text">The Data Science and Software Technology Laboratory (LCDyTS) of the Centro de Investigación en Computación (<a href="https://www.cic.ipn.mx/index.php/acerca-de-cdyts">CIC</a>) has created a database with such open data and keeps it constantly updated.</p>
-            <p class="p-text">MOREBIKE uses this database to create visualizations to show the trips made from 2018 to the present.</p>
+            <ion-item lines="none">
+              <ion-label class="ion-text-wrap">
+                <p class="p-text">ECOBICI has been in operation since 2010 and publishes its open data monthly in its <a href="https://ecobici.cdmx.gob.mx/datos-abiertos/">official page</a>.</p>
+                <p class="p-text">The Data Science and Software Technology Laboratory (LCDyTS) of the Centro de Investigación en Computación (<a href="https://www.cic.ipn.mx/index.php/acerca-de-cdyts">CIC</a>) has created a database with such open data and keeps it constantly updated.</p>
+                <p class="p-text">MOREBIKE uses this database to create visualizations to show the trips made from 2018 to the present.</p>
+              </ion-label>
+            </ion-item>
           </ion-card-content>
           <img src="assets/images/mobility.jpg" alt="ecobici_data"/>
         </ion-card>
@@ -61,13 +65,17 @@
             <ion-card-title class="subtitle ion-text-center">Tools</ion-card-title>
           </ion-card-header>
           <ion-card-content>
-            <ul>
-              <li class="p-text"><span>MySQL: </span> database management system used in the LCDyTS.</li>
-              <li class="p-text"><span>Tableau: </span> business intelligence software for data analysis and visualization.</li>
-              <li class="p-text"><span>Ionic: </span> frontend SDK used for the creation of this webpage.</li>
-            </ul>
+            <ion-item lines="none">
+              <ion-label class="ion-text-wrap">
+                <ul>
+                  <li class="p-text"><span>MySQL: </span> database management system used in the LCDyTS.</li>
+                  <li class="p-text"><span>Tableau: </span> business intelligence software for data analysis and visualization.</li>
+                  <li class="p-text"><span>Ionic: </span> frontend SDK used for the creation of this webpage.</li>
+                </ul>
+              </ion-label>
+            </ion-item>
           </ion-card-content>
-          <ion-slides class="swiper-no-swiping" [options]="slideOpts">
+          <ion-slides style="background: white;" class="swiper-no-swiping" [options]="slideOpts">
             <ion-slide>
               <img class="card-image" src="assets/images/tableau.png" alt="tableau"/>
             </ion-slide>
@@ -136,7 +144,7 @@
       </ion-col>
     </ion-row>
 
-    <ion-row class="about ion-text-center">
+    <ion-row class="about ion-text-center" style="padding-top: 10px;">
       <ion-col size-xl="6" size-lg="6" size-md="12" size-xs="12" style="padding: 0px 30px;">
         <img src="assets/images/movilidadLocal.png" alt="ecobici" />
         <h2 class="subtitle-2">Local Mobility</h2>

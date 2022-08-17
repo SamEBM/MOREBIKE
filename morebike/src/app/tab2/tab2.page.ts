@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { IonSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab2',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
+  @ViewChild(IonSlides) slides: IonSlides;
   slideOpts = {
     initialSlide: 0,
     slidesPerView: 1,
@@ -15,4 +17,11 @@ export class Tab2Page {
   };
   constructor() {}
 
+  public ionViewWillLeave(){  
+    this.slides.stopAutoplay();
+  }
+
+  public ionViewWillEnter(){
+    this.slides.startAutoplay();
+  }
 }

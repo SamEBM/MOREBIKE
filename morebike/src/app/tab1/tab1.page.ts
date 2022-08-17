@@ -25,10 +25,9 @@ export class Tab1Page implements OnInit {
     device: 'desktop',
     hideTabs: true,
     onFirstInteractive: () => {
-      console.log("onFirstInteractive");
+      
     },
     onFirstVizSizeKnown: () => {
-      console.log("onFirstVizSizeKnown");
       this.showVisualizations[this.counter] = true;
       this.counter++;
     }
@@ -39,15 +38,11 @@ export class Tab1Page implements OnInit {
   }
 
   ngOnInit(): void {
-    //DOCS API v.3:
-    //https://help.tableau.com/current/api/embedding_api/en-us/index.html
-    // Librería externa: https://www.npmjs.com/package/ngx-tableau
     this.visualizations = MOREBIKE.origin.graphs;
   }
 
   ngAfterViewInit() {
     this.divContainers = this.elem.nativeElement.querySelectorAll('.dashboard');
-    console.log(this.divContainers)
     this.initTableau();
   }
 
